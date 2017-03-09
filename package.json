@@ -1,6 +1,6 @@
 {
   "name": "language-jcl",
-  "main": "./lib/language-jcl
+  "main": "./lib/language-jcl",
   "version": "0.1.0-pre1",
   "description": "Syntax highlighting for Equinox JCL files",
   "keywords": [

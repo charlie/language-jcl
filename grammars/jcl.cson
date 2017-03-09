@@ -1,6 +1,6 @@
 comment: "Forked from the VB.NET bundle."
 fileTypes: [
-  "jcl"
+  "source.jcl"
 ]
 name: "JCL"
 patterns: [
@@ -214,4 +214,4 @@ repository:
         include: "source.asp.vb.net"
       }
     ]
-scopeName: "source.asp.vb.net"
+scopeName: "source.jcl"

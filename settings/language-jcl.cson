@@ -1,0 +1,4 @@
+".source.jcl":
+  editor:
+    commentStart: '\| '
+    foldEndPattern: "(</(?i:(head|table|div|style|script|ul|ol|form|dl))>?|\\}|^\\s*<?%?\\s*\\s*'?\\s*(?i:(end|Next))\\s*.*$)"
