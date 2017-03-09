@@ -1,28 +1,26 @@
 {
-  "name": "language-vb",
-  "main": "./lib/language-vb",
+  "name": "language-jcl",
+  "main": "./lib/language-jcl
   "version": "0.1.0-pre1",
-  "description": "Syntax highlighting for VB.net",
+  "description": "Syntax highlighting for Equinox JCL files",
   "keywords": [
     "language",
-    "visual basic",
-    "vb",
-    "visualbasic",
-    "vb.net"
+    "equinox",
+    "jcl"
   ],
   "author": {
-    "name": "Gorea235"
+    "name": "charlie"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gorea235/language-vb"
+    "url": "https://github.com/charlie/language-jcl"
   },
-  "homepage": "https://github.com/Gorea235/language-vb",
+  "homepage": "https://github.com/charlie/language-jcl",
   "license": "GNU GPL v3",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "Visual Basic highlighting for Atom",
+  "readme": "Equinox JCL highlighting for Atom",
   "readmeFilename": "README.md",
   "dependencies": {}
 }
