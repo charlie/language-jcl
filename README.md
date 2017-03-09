@@ -1,3 +1,3 @@
-# language-vb package
+# language-jcl package
 
-Converted from the ASP VB.net textmate bundle, and then modified to work with VB fully
+Forked from language-vb then tweaked to "work" with Equinox JCL code.
