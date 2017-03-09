@@ -5,6 +5,11 @@ fileTypes: [
 name: "VB.NET"
 patterns: [
   {
+    name: "comment.block"
+    begin: "\\|\\*.*?"
+    end: "\\*\\|"
+  }
+  {
     match: "\\n"
     name: "meta.ending-space"
   }
@@ -53,18 +58,18 @@ patterns: [
         name: "variable.parameter.function.asp"
       "5":
         name: "punctuation.definition.parameters.asp"
-    match: "^\\s*((?i:function|sub))\\s*([a-zA-Z_]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?"
+    match: "^\\s*((?i:function|sub|procedure))\\s*([a-zA-Z_]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?"
     name: "meta.function.asp"
   }
   {
-    begin: "(^[ \\t]+)?(?=')"
+    begin: "(^[ \\t]+)?(?=\\|)"
     beginCaptures:
       "1":
         name: "punctuation.whitespace.comment.leading.asp"
     end: "(?!\\G)"
     patterns: [
       {
-        begin: "'"
+        begin: "\\|"
         beginCaptures:
           "0":
             name: "punctuation.definition.comment.asp"
@@ -78,7 +83,7 @@ patterns: [
     name: "comment.line.apostrophe.asp"
   }
   {
-    match: "(?i:\\b(If|Then|Else|ElseIf|Else If|End If|While|Wend|For|To|Each|In|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|End With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf|Catch|Finally|GoSub|GoTo|Step|Stop|Try|SyncLock|End SyncLock|Using|End Using)\\b)"
+    match: "(?i:\\b(If|Then|Else|ElseIf|Else If|End If|While|End While|Wend|For|To|Each|In|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|End With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf|Catch|Finally|GoSub|GoTo|Step|Stop|Try|SyncLock|End SyncLock|Using|End Using|Subtable|execute method|execute import)\\b)"
     name: "keyword.control.asp"
   }
   {
@@ -98,11 +103,11 @@ patterns: [
     name: "variable.other.dim.asp"
   }
   {
-    match: "(?i:\\s*\\b(Call|Class|End Class|Const|Dim|Redim|Function|Sub|Private Sub|Public Sub|End sub|End Function|Set|End Set|Let|Get|End Get|Randomize|Option Explicit|On Error Resume Next|On Error GoTo|Operator|End Operator|Enum|End Enum|Event|Delegate|Interface|End Interface|Declare|Lib|Module|End Module|Namespace|End Namespace|On|Property|End Property|Resume|Structure|End Structure)\\b\\s*)"
+    match: "(?i:\\s*\\b(Call|Class|End Class|Const|Dim|Redim|Function|Sub|Private Sub|Public Sub|End sub|End Function|Set|End Set|Let|Get|End Get|Randomize|Option Explicit|On Error Resume Next|On Error GoTo|Operator|End Operator|Enum|End Enum|Event|Delegate|Interface|End Interface|Declare|Lib|Module|End Module|Namespace|End Namespace|On|Property|End Property|Resume|Structure|End Structure|Define)\\b\\s*)"
     name: "storage.type.asp"
   }
   {
-    match: "(?i:\\s*\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort)\\b\\s*)" # variable types
+    match: "(?i:\\s*\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort|logical|number|Handle|Memo)\\b\\s*)" # variable types
     name: "storage.type.asp"
   }
   { # keywords that have the same colour as 'storage types' in visual studio, but are not 'storage types'
