@@ -1,8 +1,8 @@
-comment: "Originally converted from the textmate ASP.VB.Net bundle. Modified my Luke Davies."
+comment: "Forked from the VB.NET bundle."
 fileTypes: [
-  "vb"
+  "jcl"
 ]
-name: "VB.NET"
+name: "JCL"
 patterns: [
   {
     name: "comment.block"
